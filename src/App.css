@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease-in-out;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+.App {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:0px 20px 10px 10px;
+}
+
+.dashboard-nav {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.dashboard-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.dashboard-nav ul li {
+  padding: 15px 30px;
+  margin:5px 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-nav ul li:hover {
+  background-color: #bdbdbd;
+}
+
+.dashboard-nav ul li.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.top-three {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.top-three h4{
+  margin-bottom: 20px;
+}
+
+.top-leaders {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.leader {
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leader.rank-1 {
+  background-color: gold;
+}
+
+.leader.rank-2 {
+  background-color: silver;
+}
+
+.leader.rank-3 {
+  background-color: #cd7f32; 
+}
+
+.leader-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.leader-points {
+  font-size: 1rem;
+  color: #666;
+}
+
+.charts-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  width: 80%;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.participants-list {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.participants-list h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.participants-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.participants-list li:hover {
+  transform: translateY(-5px);
+  background-color: #f9f9f9;
+}
+
+.participant-name {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.participant-points {
+  font-size: 1rem;
+  color: #666;
+}

@@ -1,0 +1,124 @@
+.dialog-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    max-height: 100vh;
+    background-color: rgba(128, 128, 128, 0.6); /* Improved background opacity */
+    transition: 1.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.dialog-container::-webkit-scrollbar {
+    display: none;
+}
+
+.dialog-content {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.dialog-content::-webkit-scrollbar {
+    display: none;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.participant-name {
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.dialog-data {
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.dialog-data:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.dialog-data p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th, .data-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.data-table th {
+    font-weight: bold;
+    color: white;
+}
+
+.data-table td {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover td {
+    background-color: #f1f1f1; /* Slight highlight on hover */
+}
+
+/* Specific table color themes */
+.daily-table p {
+    background-color: #000000; /* Red for daily */
+}
+
+.weekly-table p {
+    background-color: #000000; /* Green for weekly */
+}
+
+.monthly-table p {
+    background-color: #000000; /* Blue for monthly */
+}
+
+.daily-table th {
+    background-color: #ff6b6b;
+}
+
+.weekly-table th {
+    background-color: #4caf50;
+}
+
+.monthly-table th {
+    background-color: #1e90ff;
+}
+
+.data-table th, .data-table td {
+    border-bottom: 2px solid #ddd;
+}

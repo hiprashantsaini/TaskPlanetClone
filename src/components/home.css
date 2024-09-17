@@ -1,0 +1,112 @@
+/* App.css */
+.home {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    max-width: 1400px;
+  }
+
+.moving-text{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+  
+.moving-text-p{
+  width: 180px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+
+}
+
+
+.marquee-tag-text{
+  width: 100%;
+  padding: 5px;
+}
+  .gain-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .gain-item {
+    text-align: center;
+  }
+
+  
+  .leaderboard {
+     margin-bottom: 15px;
+  }
+  
+  
+  .social-media-tasks {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .social-media-tasks h3{
+    margin-bottom: 20px;
+  }
+  
+  .allTasks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .task-item {
+    text-align: center;
+    width: 130px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    cursor: pointer;
+  }
+
+  .task-item p{
+    text-align: center;
+    margin: 5px 0px;
+  }
+  
+  .referral-section {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .referral-section h3{
+    margin-bottom: 20px;
+  }
+  
+  .referral-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: medium;
+  }
+
+  .referral-buttons button:hover{
+    padding: 12px 24px;
+    color: white;
+    background-color: #252525;
+  }
+
+  .gain-item-logo{
+    animation: spin 3s ease-in-out infinite;
+  }
+  
+  @keyframes spin{
+      from{
+        transform: rotateY(0deg);
+      }
+      to{
+        transform: rotateY(360deg);
+      }
+  }
+  
+  
