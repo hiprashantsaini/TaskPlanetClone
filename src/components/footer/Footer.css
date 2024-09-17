@@ -15,22 +15,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     padding: 20px 10px;
-  }
-  
-  .footer-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-left,
-  .footer-right {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
+    gap: 10px;
   }
   
   .footer-center {
